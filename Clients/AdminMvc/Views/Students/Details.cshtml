@@ -1,0 +1,74 @@
+@model AdminMvc.ViewModels.StudentViewModel
+
+<h1 class="page-title">@Model.FirstName</h1>
+
+<section>
+  <a asp-controller="Students" asp-action="AddCourse" method="get">Lägg till student på ny kurs</a>
+</section>
+
+<section class="form-container">
+  <h4>Förnamn: @Model.FirstName</h4>
+  <h4>Efternamn: @Model.LastName</h4>
+
+  <p>StudentId: @Model.Id</p>
+  <p><span>Adress: </span> @Model.Address</p>
+  <p><span>Epost: </span> @Model.Email</p>
+  <p><span>Telefonnr: </span> @Model.PhoneNumber</p>
+
+  <tr>
+    <h5 class="is-active">Aktiva kurser:</h5>
+  </tr>
+  @foreach (var course in @Model.StudentCourses)
+  {
+    <table class="table">
+      @if (@course.IsActive is true)
+      {
+        <tr>
+          <td class="prop">KursID:</td>
+          <td class="content">@course.Course.CourseId</td>
+        </tr>
+        <tr>
+          <td>Kursnamn:</td>
+          <td>@course.Course.Name</td>
+        </tr>
+        <tr>
+          <td>Start datum:</td>
+          <td>@course.StartDate</td>
+        </tr>
+        <a asp-action="RemoveCourse" asp-route-id="@course.Id" method="get" class="btn btn-primary">Ta bort</a>
+      }
+    </table>
+  }
+
+  <tr>
+    <h5 class="not-active">Avslutade kurser:</h5>
+  </tr>
+
+  @foreach (var course in @Model.StudentCourses)
+  {
+    <table class="table">
+      @if (@course.IsActive is false)
+      {
+        <tr>
+          <td class="prop">KursID:</td>
+          <td class="content">@course.Course.CourseId</td>
+        </tr>
+        <tr>
+          <td>Kursnamn:</td>
+          <td>@course.Course.Name</td>
+        </tr>
+        <tr>
+          <td>Start datum:</td>
+          <td>@course.StartDate</td>
+        </tr>
+        <tr>
+          <td>Slutdatum:</td>
+          <td>@course.EndDate</td>
+        </tr>
+      }
+    </table>
+  }
+
+</section>
+
+<a class="go-back" asp-action="Index">Till alla studenter</a>

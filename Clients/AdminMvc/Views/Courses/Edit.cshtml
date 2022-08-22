@@ -1,0 +1,55 @@
+@model AdminMvc.ViewModels.CoursePutViewModel
+
+<h1 class="page-title">Uppdatera kurs</h1>
+
+<a class="go-back" asp-action="Index">Tillbaka</a>
+
+<section class="form-container">
+  <h4>Kursinfo</h4>
+  <form class="form" asp-action="Edit" method="post">
+    <div class="form-control">
+      <label asp-for="@Model!.CourseNo"></label>
+      <input asp-for="@Model!.CourseNo" />
+      @* <span asp-validation-for="@Model!.CourseNo"></span> *@
+    </div>
+    <div class="form-control">
+      <label asp-for="@Model!.Name"></label>
+      <input asp-for="@Model!.Name" />
+      @* <span asp-validation-for="@Model!.Name"></span> *@
+    </div>
+    <div class="form-control">
+      <label asp-for="@Model!.Duration"></label>
+      <input asp-for="@Model!.Duration" />
+      @* <span asp-validation-for="@Model!.Duration"></span> *@
+    </div>
+    <div class="form-control">
+      <label asp-for="@Model!.DurationUnit"></label>
+      <input asp-for="@Model!.DurationUnit" />
+      @* <span asp-validation-for="@Model!.DurationUnit"></span> *@
+    </div>
+    <div class="form-control">
+      <label asp-for="@Model!.Category"></label>
+      <input asp-for="@Model!.Category" />
+      @* <span asp-validation-for="@Model!.Category"></span> *@
+    </div>
+    <div class="form-control">
+      <label asp-for="@Model!.TeacherId"></label>
+      <input asp-for="@Model!.TeacherId" />
+      @* <span asp-validation-for="@Model!.TeacherId"></span> *@
+    </div>
+    <div class="form-control">
+      <label asp-for="@Model!.Description"></label>
+      <textarea asp-for="@Model!.Description"></textarea>
+      @* <input asp-for="@Model!.Description" /> *@
+      @* <span asp-validation-for="@Model!.Description"></span> *@
+    </div>
+    <div class="form-control">
+      <label asp-for="@Model!.SubCourses"></label>
+      <textarea asp-for="@Model!.SubCourses"></textarea>
+      @* <input asp-for="@Model!.SubCourses" /> *@
+      @* <span asp-validation-for="@Model!.SubCourses"></span> *@
+    </div>
+    <button type="submit" class="btn">Spara</button>
+  </form>
+
+</section>

@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/adminstyles.css">
+    <link rel="stylesheet" href="~/css/adminutilities.css">
+
+    <title>WestCoast Education - @ViewData["Title"]</title>
+</head>
+
+
+<body>
+    <nav id="navbar">
+        <h1 class="logo"><span class="text-primary">Westcoast </span>Education</h1>
+        <ul>
+            <li><a asp-controller="Categories" asp-action="Index">Kompetenser</a></li>
+            <li><a asp-controller="Courses" asp-action="Index">Kurser</a></li>
+            <li><a asp-controller="Teachers" asp-action="Index">Lärare</a></li>
+            <li><a asp-controller="Students" asp-action="Index">Studenter</a></li>
+        </ul>
+    </nav>
+    <main>
+        @RenderBody()
+    </main>
+</body>
+
+</html>

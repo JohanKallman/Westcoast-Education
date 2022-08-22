@@ -1,0 +1,27 @@
+@model IEnumerable<AdminMvc.ViewModels.StudentViewModel>
+@{
+  ViewData["Title"] = "Våra studenter i systemet";
+}
+
+<h1 class="page-title">@ViewData["Title"]</h1>
+
+<article>
+  <section>
+    <a asp-controller="Students" asp-action="Create" method="post" class="btn btn-warning">Lägg till ny student</a>
+  </section>
+  <section class="galley-wrapper">
+    @foreach (var student in Model)
+    {
+      <div class="gallery-card">
+        <h4>StudentId: @student.Id</h4>
+        <h4>Förnamn: @student.FirstName</h4>
+        <h4>Efternamn: @student.LastName</h4>
+        <p><span>Adress: </span> @student.Address</p>
+        <p><span>Epost: </span> @student.Email</p>
+        <p><span>Telefonnr: </span> @student.PhoneNumber</p>
+        <a asp-action="Details" asp-route-id="@student.Id" class="btn btn-primary">Detaljer</a>
+        <a asp-action="Edit" asp-route-id="@student.Id" class="btn btn-primary">Ändra</a>
+      </div>
+    }
+  </section>
+</article>

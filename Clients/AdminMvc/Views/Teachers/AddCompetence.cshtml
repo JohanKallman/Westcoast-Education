@@ -1,0 +1,19 @@
+@model AdminMvc.ViewModels.TeacherPostCompetenceViewModel
+
+<h1 class="page-title">Lägg till ny lärarkompetens här</h1>
+<section class="form-container">
+  <h4>Kompetensinformation</h4>
+  <form class="form" asp-action="AddCompetence" method="post">
+    <div class="form-control">
+      <label asp-for="@Model!.CompetenceId"></label>
+      <input asp-for="@Model!.CompetenceId" />
+    </div>
+    <div class="form-control">
+      <label asp-for="@Model!.TeacherId"></label>
+      <input asp-for="@Model!.TeacherId" />
+      @* <input type="text" value="@Model!.TeacherId" /> *@
+    </div>
+
+    <button type="submit" class="btn">Spara</button>
+  </form>
+</section>

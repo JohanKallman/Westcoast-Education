@@ -1,0 +1,21 @@
+@model IEnumerable<AdminMvc.ViewModels.CategoryViewModel>
+@{
+  ViewData["Title"] = "Våra kategorier i systemet";
+}
+
+<h1 class="page-title">@ViewData["Title"]</h1>
+
+<article>
+  <section>
+    <a asp-controller="Categories" asp-action="Create" method="post" class="btn btn-warning">Lägg till ny kategori</a>
+  </section>
+  <section class="galley-wrapper">
+    @foreach (var category in Model)
+    {
+      <div class="gallery-card">
+        <h4>Kategori: @category.Name</h4>
+        <p><span>KategoriId: </span> @category.CategoryId</p>
+      </div>
+    }
+  </section>
+</article>

@@ -1,0 +1,38 @@
+@model AdminMvc.ViewModels.TeacherViewModel
+
+<h1 class="page-title">@Model.FirstName</h1>
+
+<section>
+  <a asp-controller="Teachers" asp-action="AddCompetence" method="get">Lägg till ny Lärarkompetens</a>
+</section>
+
+@* <section>
+  <a asp-controller="Teachers" asp-action="AddCompetence" asp-route-id="@Model.Id" method="get">Lägg till ny
+  Lärarkompetens</a>
+  </section> *@
+
+
+<section class="form-container">
+  <h4>Förnamn: @Model.FirstName</h4>
+  <h4>Efternamn: @Model.LastName</h4>
+
+  <p>LärarId: @Model.Id</p>
+  <p><span>Adress: </span> @Model.Address</p>
+  <p><span>Epost: </span> @Model.Email</p>
+  <p><span>Telefonnr: </span> @Model.PhoneNumber</p>
+  @foreach (var competence in @Model.Competences)
+  {
+    <table class="table">
+      <tr>
+        <td class="prop">KompetensID:</td>
+        <td class="content">@competence.Competence.CategoryId</td>
+      </tr>
+      <tr>
+        <td>Kompetens:</td>
+        <td>@competence.Competence.Name</td>
+      </tr>
+    </table>
+  }
+</section>
+
+<a class="go-back" asp-action="Index">Till alla lärare</a>

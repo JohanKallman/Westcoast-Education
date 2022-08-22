@@ -1,0 +1,17 @@
+@model AdminMvc.ViewModels.CourseViewModel
+
+<article class="course-detail">
+  <h1 class="page-title">Kursinfo</h1>
+  <section class="course-description">
+    <h4>KursID: @Model.CourseId</h4>
+    <h4>Kursnummer: @Model.CourseNo</h4>
+    <h4>Namn: @Model.Name</h4>
+    <h4>Längd: @Model.Duration @Model.DurationUnit</h4>
+    <h4>Kategori: @Model.Category</h4>
+    <h4>Lärare: @Model.Teacher</h4>
+    <h4>Beskrivning: @Model.Description</h4>
+    <h4>Detaljer: @Model.SubCourses</h4>
+    <hr>
+    <a class="go-back" asp-action="Index"><i class="fa-solid fa-left-long"></i>Tillbaka till våra kurser</a>
+  </section>
+</article>

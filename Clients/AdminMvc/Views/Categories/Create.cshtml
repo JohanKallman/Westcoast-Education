@@ -1,0 +1,14 @@
+@model AdminMvc.ViewModels.CategoryPostViewModel
+
+
+<h1 class="page-title">Lägg till ny kategori</h1>
+<section class="form-container">
+  <h4>Kategori info</h4>
+  <form class="form" asp-action="Create" method="post">
+    <div class="form-control">
+      <label asp-for="@Model!.Name"></label>
+      <input asp-for="@Model!.Name" />
+    </div>
+    <button type="submit" class="btn">Spara</button>
+  </form>
+</section>

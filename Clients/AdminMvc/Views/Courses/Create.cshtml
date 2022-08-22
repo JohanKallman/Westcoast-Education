@@ -1,0 +1,56 @@
+@model AdminMvc.ViewModels.CoursePostViewModel
+
+<h1 class="page-title">Lägg till ny kurs</h1>
+<section class="form-container">
+  <h4>Kurs info</h4>
+  <form class="form" asp-action="Create" method="post">
+    <div class="form-control">
+      <label asp-for="@Model!.CourseNo"></label>
+      <input asp-for="@Model!.CourseNo" />
+    </div>
+    <span asp-validation-for="@Model!.CourseNo" class="text-danger"></span>
+
+    <div class="form-control">
+      <label asp-for="@Model!.Name"></label>
+      <input asp-for="@Model!.Name" />
+    </div>
+    <span asp-validation-for="@Model!.Name" class="text-danger"></span>
+    <div class="form-control">
+      <label asp-for="@Model!.Duration"></label>
+      <input asp-for="@Model!.Duration" />
+    </div>
+    <span asp-validation-for="@Model!.Duration" class="text-danger"></span>
+    <div class="form-control">
+      <label asp-for="@Model!.DurationUnit"></label>
+      <input asp-for="@Model!.DurationUnit" />
+    </div>
+    <span asp-validation-for="@Model!.DurationUnit" class="text-danger"></span>
+    <div class="form-control">
+      <label asp-for="@Model!.Category"></label>
+      <input asp-for="@Model!.Category" />
+    </div>
+    <span asp-validation-for="@Model!.Category" class="text-danger"></span>
+    <div class="form-control">
+      <label asp-for="@Model!.TeacherId"></label>
+      <input asp-for="@Model!.TeacherId" />
+    </div>
+    <span asp-validation-for="@Model!.TeacherId" class="text-danger"></span>
+    @* <div class="form-control">
+      <label asp-for="@Model!.Description"></label>
+      <input asp-for="@Model!.Description" />
+      </div> *@
+    <div class="form-control">
+      <label asp-for="@Model!.Description"></label>
+      <textarea asp-for="@Model!.Description"></textarea>
+    </div>
+    @* <div class="form-control">
+      <label asp-for="@Model!.SubCourses"></label>
+      <input asp-for="@Model!.SubCourses" />
+      </div> *@
+    <div class="form-control">
+      <label asp-for="@Model!.SubCourses"></label>
+      <textarea asp-for="@Model!.SubCourses"></textarea>
+    </div>
+    <button type="submit" class="btn">Spara</button>
+  </form>
+</section>

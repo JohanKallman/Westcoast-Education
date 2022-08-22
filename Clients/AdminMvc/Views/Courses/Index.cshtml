@@ -1,0 +1,30 @@
+@model IEnumerable<AdminMvc.ViewModels.CourseViewModel>
+@{
+  ViewData["Title"] = "Våra kurser i systemet";
+}
+
+<h1 class="page-title">@ViewData["Title"]</h1>
+
+
+<article>
+  <section>
+    <a asp-controller="Courses" asp-action="Create" method="post" class="btn btn-warning">Lägg till ny kurs</a>
+  </section>
+  <section class="galley-wrapper">
+    @if (@Model != null)
+    {
+      @foreach (var course in Model)
+      {
+        <div class="gallery-card">
+          <h4>KursId: @course.CourseId</h4>
+          <h4>Kursnummer: @course.CourseNo</h4>
+          <h4>Kurstitel: @course.Name</h4>
+          <h4>Kategori: @course.Category</h4>
+          <h4>Lärare: @course.Teacher</h4>
+          <a asp-action="Details" asp-route-id="@course.CourseId" class="btn btn-primary">Detaljer</a>
+          <a asp-action="Edit" asp-route-id="@course.CourseId" class="btn btn-primary">Ändra</a>
+        </div>
+      }
+    }
+  </section class>
+</article>

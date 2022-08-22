@@ -1,0 +1,18 @@
+@model AdminMvc.ViewModels.StudentPostCourseViewModel
+
+<h1 class="page-title">Lägg till ny kurs till studenten här</h1>
+<section class="form-container">
+  <h4>StudentKursinformation</h4>
+  <form class="form" asp-action="AddCourse" method="post">
+    <div class="form-control">
+      <label asp-for="@Model!.CourseId"></label>
+      <input asp-for="@Model!.CourseId" />
+    </div>
+    <div class="form-control">
+      <label asp-for="@Model!.StudentId"></label>
+      <input asp-for="@Model!.StudentId" />
+    </div>
+
+    <button type="submit" class="btn">Spara</button>
+  </form>
+</section>
