@@ -1,0 +1,31 @@
+@model IEnumerable<UserMvc.ViewModels.CourseViewModel>
+@{
+    ViewData["Title"] = "Våra kurser i systemet";
+}
+
+<h1 class="page-title">@ViewData["Title"]</h1>
+
+<form asp-action="Index" method="get">
+    <div class="form-actions no-color">
+        <p>
+            Sök: <input type="text" name="category" placeholder="kategori" />
+            <input type="submit" value="Sök" class="btn btn-default" />
+            <a asp-action="Index">Rensa</a>
+        </p>
+    </div>
+</form>
+
+<section>
+    <div class="columns">
+        @foreach (var course in Model)
+        {
+            <div class="col">
+                <h3><span>Kurs: </span>@course.Name</h3>
+                <h4><span>Kursnummer: </span>@course.CourseNo</h4>
+                <p><span>Kurslängd: </span>@course.Duration @course.DurationUnit</p>
+                <a asp-controller="courses" asp-action="details" asp-route-id="@course.CourseId" class="cardlink">Fler
+                    detaljer</a>
+            </div>
+        }
+    </div>
+</section>

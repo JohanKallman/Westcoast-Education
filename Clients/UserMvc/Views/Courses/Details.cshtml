@@ -1,0 +1,15 @@
+@model UserMvc.ViewModels.CourseViewModel
+
+<article class="course-detail">
+  <h1 class="page-title">@Model.Name</h1>
+  <section class="course-description">
+    <h2>Kategori: @Model.Category</h2>
+    <h4>Kursbeskrivning: @Model.Description</h4>
+    <hr>
+    <h5>Att veta om kursen:</h5>
+    <p>@Model.SubCourses</p>
+    <br>
+    <hr>
+    <a class="go-back" asp-action="Index"><i class="fa-solid fa-left-long"></i>Tillbaka till våra kurser</a>
+  </section>
+</article>
