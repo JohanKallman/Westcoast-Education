@@ -1,0 +1,143 @@
+[
+  {
+    "CourseNo": 1000,
+    "Name": "C för nybörjare",
+    "Duration": "8",
+    "DurationUnit": "veckor",
+    "Category": "C",
+    "TeacherId": 1,
+    "Description": "För dig som vill lära dig grunderna i programmeringsspråket C",
+    "SubCourses": "Innehåller grundläggande teori och kunskaper i C. Vi behandlar även praktiska moment där variabler, metoder och objektorienterad programmering står i fokus. Verktyget som används är Visual Studio"
+  },
+  {
+    "CourseNo": 1001,
+    "Name": "C för avancerade",
+    "Duration": "12",
+    "DurationUnit": "veckor",
+    "Category": "C",
+    "TeacherId": 1,
+    "Description": "För dig som vill lära dig avancerade kunskaper i programmeringsspråket C",
+    "SubCourses": "Fortsättningskurs C. Asynkron programmering och interfaces. Praktiska moment där du examineras löpande."
+  },
+  {
+    "CourseNo": 1010,
+    "Name": "Python för nybörjare",
+    "Duration": "16",
+    "DurationUnit": "veckor",
+    "Category": "Python",
+    "TeacherId": 2,
+    "Description": "För dig som vill lära dig grunderna i programmeringsspråket Python",
+    "SubCourses": "Innehåller grundläggande teori och kunskaper i Python. Vi behandlar även praktiska moment där variabler, metoder och objektorienterad programmering står i fokus. Verktyget som används är Python Studio"
+  },
+  {
+    "CourseNo": 1011,
+    "Name": "Python för avancerade",
+    "Duration": "4",
+    "DurationUnit": "månader",
+    "Category": "Python",
+    "TeacherId": 2,
+    "Description": "För dig som vill lära dig avancerade kunskaper i programmeringsspråket Python",
+    "SubCourses": "Fortsättningskurs i Python. Vi behandlar avancerade algoritmer och AI så att du kan bli en riktig programmeringsguru. Praktiska moment där du examineras löpande."
+  },
+  {
+    "CourseNo": 2001,
+    "Name": "Javascript för nybörjare",
+    "Duration": "16",
+    "DurationUnit": "veckor",
+    "Category": "Javascript",
+    "TeacherId": 3,
+    "Description": "För dig som vill lära dig grunderna i programmeringsspråket Javascript",
+    "SubCourses": "Innehåller grundläggande teori och kunskaper i Javascript. Vi behandlar även praktiska moment där variabler, metoder och objektorienterad programmering står i fokus. Verktyget som används är Visual Studio Code"
+  },
+  {
+    "CourseNo": 2002,
+    "Name": "Javascript för avancerade",
+    "Duration": "4",
+    "DurationUnit": "månader",
+    "Category": "Javascript",
+    "TeacherId": 3,
+    "Description": "För dig som vill lära dig avancerade kunskaper i programmeringsspråket Javascript",
+    "SubCourses": "Fortsättningskurs i Javascript. Vi behandlar avancerade metoder så att du kan bli en riktig bra Javascriptutvecklare. Praktiska moment där du examineras löpande."
+  },
+  {
+    "CourseNo": 3001,
+    "Name": "Typescript för nybörjare",
+    "Duration": "16",
+    "DurationUnit": "veckor",
+    "Category": "Typescript",
+    "TeacherId": 4,
+    "Description": "För dig som vill lära dig grunderna i programmeringsspråket Typescript",
+    "SubCourses": "Innehåller grundläggande teori och kunskaper i Typescript. Vi behandlar även praktiska moment där variabler, metoder och objektorienterad programmering står i fokus. Verktyget som används är Visual Studio Code"
+  },
+  {
+    "CourseNo": 3002,
+    "Name": "Typescript för avancerade",
+    "Duration": "6",
+    "DurationUnit": "månader",
+    "Category": "Typescript",
+    "TeacherId": 4,
+    "Description": "För dig som vill lära dig avancerade kunskaper i programmeringsspråket Typescript",
+    "SubCourses": "Fortsättningskurs i Typescript. Vi behandlar avancerade metoder så att du kan bli en riktig bra Typescriptutvecklare. Praktiska moment där du examineras löpande."
+  },
+  {
+    "CourseNo": 3011,
+    "Name": "Kotlin för nybörjare",
+    "Duration": "16",
+    "DurationUnit": "veckor",
+    "Category": "Kotlin",
+    "TeacherId": 4,
+    "Description": "För dig som vill lära dig grunderna i programmeringsspråket Kotlin",
+    "SubCourses": "Innehåller grundläggande teori och kunskaper i Kotlin. Vi behandlar även praktiska moment där variabler, metoder och objektorienterad programmering står i fokus. Platformen som används är Xamarin"
+  },
+  {
+    "CourseNo": 3012,
+    "Name": "Kotlin för avancerade",
+    "Duration": "6",
+    "DurationUnit": "månader",
+    "Category": "Kotlin",
+    "TeacherId": 4,
+    "Description": "För dig som vill lära dig avancerade kunskaper i programmeringsspråket Kotlin",
+    "SubCourses": "Fortsättningskurs i Kotlin. Vi behandlar avancerade metoder så att du kan bli en riktig bra Kotlinutvecklare. Praktiska moment där du examineras löpande."
+  },
+  {
+    "CourseNo": 4001,
+    "Name": "Java för nybörjare",
+    "Duration": "12",
+    "DurationUnit": "veckor",
+    "Category": "Java",
+    "TeacherId": 5,
+    "Description": "För dig som vill lära dig grunderna i Java",
+    "SubCourses": "Innehåller grundläggande teori och kunskaper i Java. Vi behandlar avancerade metoder så att du kan bli en riktig bra Javautvecklare. Praktiska moment där du examineras löpande."
+  },
+  {
+    "CourseNo": 5001,
+    "Name": "Webutveckling för nybörjare",
+    "Duration": "12",
+    "DurationUnit": "veckor",
+    "Category": "Webutveckling",
+    "TeacherId": 5,
+    "Description": "För dig som vill lära dig grunderna i Webutveckling",
+    "SubCourses": "Innehåller grundläggande teori och kunskaper i Webutveckling. Vi behandlar avancerade metoder så att du kan bli en riktig bra inom Webutveckling. Praktiska moment där du examineras löpande."
+  },
+
+  {
+    "CourseNo": 4001,
+    "Name": "Databaser för nybörjare",
+    "Duration": "4",
+    "DurationUnit": "veckor",
+    "Category": "Databaser",
+    "TeacherId": 5,
+    "Description": "För dig som vill lära dig grunderna i Databaser",
+    "SubCourses": "Innehåller grundläggande teori och kunskaper om Databaser. Vi behandlar även praktiska moment där relations- och dokumentdatabaser står i fokus. Platformen som används är Azure"
+  },
+  {
+    "CourseNo": 4002,
+    "Name": "Databaser för avancerade",
+    "Duration": "3",
+    "DurationUnit": "månader",
+    "Category": "Databaser",
+    "TeacherId": 5,
+    "Description": "För dig som vill lära dig avancerade kunskaper i programmeringsspråket Databaser",
+    "SubCourses": "Fortsättningskurs i Databaser. Vi behandlar API'er så att du kan bli en riktig bra Databasvecklare. Praktiska moment där du examineras löpande."
+  }
+]

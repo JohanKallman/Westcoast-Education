@@ -1,0 +1,54 @@
+[
+  {
+    "CompetenceId": 1,
+    "TeacherId": 1
+  },
+  {
+    "CompetenceId": 2,
+    "TeacherId": 1
+  },
+  {
+    "CompetenceId": 2,
+    "TeacherId": 2
+  },
+  {
+    "CompetenceId": 4,
+    "TeacherId": 2
+  },
+  {
+    "CompetenceId": 3,
+    "TeacherId": 3
+  },
+  {
+    "CompetenceId": 4,
+    "TeacherId": 3
+  },
+  {
+    "CompetenceId": 5,
+    "TeacherId": 3
+  },
+  {
+    "CompetenceId": 4,
+    "TeacherId": 4
+  },
+  {
+    "CompetenceId": 5,
+    "TeacherId": 4
+  },
+  {
+    "CompetenceId": 7,
+    "TeacherId": 4
+  },
+  {
+    "CompetenceId": 6,
+    "TeacherId": 5
+  },
+  {
+    "CompetenceId": 7,
+    "TeacherId": 5
+  },
+  {
+    "CompetenceId": 8,
+    "TeacherId": 5
+  }
+]

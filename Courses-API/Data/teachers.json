@@ -1,0 +1,38 @@
+[
+  {
+    "FirstName": "Stefanna",
+    "LastName": "Milkowitch",
+    "Address": "Apelvägen 100",
+    "Email": "a.ahlstedt@wcedu.com",
+    "PhoneNumber": "12345678"
+  },
+  {
+    "FirstName": "Gutte",
+    "LastName": "Guru",
+    "Address": "Mjölkvägen 7",
+    "Email": "h.guru@wcedu.com",
+    "PhoneNumber": "44556677"
+  },
+  {
+    "FirstName": "Gutte",
+    "LastName": "Gustavsson",
+    "Address": "Glassgatan 49",
+    "Email": "g.gustavsson@wcedu.com",
+    "PhoneNumber": "51346845"
+  },
+  {
+    "FirstName": "Titti",
+    "LastName": "Danielsson",
+    "Address": "Skolvägen 34",
+    "Email": "t.danielsson@wcedu.com",
+    "PhoneNumber": "47471360"
+  },
+  {
+    "FirstName": "Ander",
+    "LastName": "Andersson",
+    "Address": "Ryttarvägen 5",
+    "Email": "a.andersson@wcedu.com",
+    "PhoneNumber": "23234865"
+  }
+
+]
